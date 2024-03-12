@@ -3,9 +3,9 @@ function validateSyntax() {
     let result = ''; // Placeholder for validation result
 
     // Regular expression to check if input starts with 'pet_' and is followed by alphanumeric characters
-    let regex = /^pet_[a-zA-Z0-9]+$/;
+    let regex = /^pet_(19|20)\d{2}[A-Z][a-zA-Z0-9]+$/.test(input);
 
-    if (regex.test(input)) {
+    if (regex) {
         result = 'Valid Syntax 🟢';
     } else {
         result = 'Invalid Syntax 🔴';
