@@ -6,9 +6,9 @@ function validateSyntax() {
     let regex = /^pet_[a-zA-Z0-9]+$/;
 
     if (regex.test(input)) {
-        result = 'Valid syntax';
+        result = 'Valid syntax 🟢';
     } else {
-        result = 'Invalid syntax';
+        result = 'Invalid syntax 🔴';
     }
 
     document.getElementById('result').innerText = result;
