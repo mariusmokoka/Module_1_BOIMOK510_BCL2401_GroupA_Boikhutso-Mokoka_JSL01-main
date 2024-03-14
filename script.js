@@ -6,7 +6,7 @@ function validateSyntax() {
     let regex = /^pet_(19|20)\d{2}[A-Z][a-zA-Z0-9]+$/.test(input);
 
     if (regex) {
-        result = 'Valid Syntax 🟢';
+        result = 'Valid Syntax ';
     } else {
         result = 'Invalid Syntax 🔴';
     }
